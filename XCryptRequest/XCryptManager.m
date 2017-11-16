@@ -20,11 +20,17 @@
 #define XCryptSender (@"Sender")
 #define XCryptCallBackParam (@"CallbackParam")
 
+typedef NS_ENUM(NSInteger,OpRequestsType){
+
+    RemoveObjectType=1,
+    AddObjectType=2,
+};
+
 @interface XCryptManager()<XCryptRequestDelegate>
 
 @property(nonatomic,strong)NSMutableArray *requests;//save request
 
-@property(atomic,strong)NSRecursiveLock *opLock;//lock
+@property(nonatomic,strong)NSRecursiveLock *opLock;//lock
 
 @end
 
@@ -88,21 +94,45 @@
     }
     
     xr.userInfo=userInfo;
+
+    [self operationRequest:AddObjectType
+                    object:xr
+                requestTag:callbackParam
+                    sender:sender];
+        
+}
+
+-(void)addOperationRequestToShareQueue:(XCryptRequest *)xr{
+
+    if(xr){
     
-    [self.opLock lock];
-    [self.requests addObject:xr];
-    [self.opLock unlock];
-    
-    [[XCryptRequest shareQueue] addOperation:xr];
+        [[XCryptRequest shareQueue] addOperation:xr];
+    }
 }
 
 #pragma mark - Cancel Request
 -(void)cancelXCryptRequest:(id)sender
                 requestTag:(id)requestTag{
+    
+    NSLog(@"cancelXCryptRequest");
+    [self operationRequest:RemoveObjectType
+                    object:nil
+                requestTag:requestTag
+                    sender:sender];
+}
 
+#pragma mark - Operation requests
+-(void)operationRequest:(OpRequestsType)opType
+                 object:(id)object
+             requestTag:(id)requestTag
+                 sender:(id)sender{
+    
+    //lock requests array operation
     [self.opLock lock];
+    NSLog(@"cancel,thread:%@",[NSThread currentThread]);
     
     __block XCryptRequest *mid;
+    __block BOOL existRequest=NO;
     
     [self.requests enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
@@ -111,21 +141,35 @@
         NSString *cbp=[xr.userInfo objectForKey:XCryptCallBackParam];
         
         if([cbp isEqualToString:(NSString *)requestTag]){
-        
+            
             mid=xr;
             
             *stop=YES;
+            existRequest=YES;
         }
     }];
     
-    [self.requests removeObject:mid];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        [mid cancel];
-    });
-    
     [self.opLock unlock];
+    
+    
+    if(opType==RemoveObjectType){
+        
+        if(existRequest && mid){
+        
+            [self.requests removeObject:mid];
+            
+            [mid cancel];
+        }
+        
+    }else{
+    
+        if(object && !existRequest){
+        
+            [self.requests addObject:object];
+            
+            [self addOperationRequestToShareQueue:object];
+        }
+    }
 }
 
 #pragma mark - XCrypt Request Delegate

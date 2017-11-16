@@ -460,14 +460,20 @@
      buffer will always be large enough, even during decryption.
      */
     size_t dstBufferSize = cryptReadSize;
-    if(![self isCancelled] && ![self isFinished]){
+    
+    [self.oplock lock];
+    if(![self isCancelled] && ![self isFinished] && _cryptor!=NULL){
     
         dstBufferSize=MAX(CCCryptorGetOutputLength(_cryptor, // cryptor
                                      cryptReadSize, // input length
                                      true), // final
             cryptReadSize);
+    }else{
+    
+        [self.oplock unlock];
+        return;
     }
-   
+    [self.oplock unlock];
     
     NSMutableData *dstData = [NSMutableData dataWithLength:dstBufferSize];
     NSMutableData *srcData = [NSMutableData dataWithLength:cryptReadSize];
@@ -482,10 +488,18 @@
     BOOL hasMoreData=YES;
     while(hasMoreData){
         
+        [self.oplock lock];
         if(![self isCancelled] && ![self isFinished] && self.readStream){
         
             srcLength=[self.readStream read:srcBytes maxLength:cryptReadSize];
+            
+        }else{
+            
+            [self.oplock unlock];
+            
+            return;
         }
+        [self.oplock unlock];
         
         if(srcLength<0){
             
@@ -503,7 +517,8 @@
             break;
         }
         
-        if(![self isCancelled] && ![self isFinished]){
+        [self.oplock lock];
+        if(![self isCancelled] && ![self isFinished] && _cryptor){
         
             result=CCCryptorUpdate(_cryptor,       // cryptor
                                    srcBytes,      // dataIn
@@ -511,8 +526,12 @@
                                    dstBytes,      // dataOut
                                    dstBufferSize, // dataOutAvailable
                                    &dstLength);   // dataOutMoved
-        }
+        }else{
         
+            [self.oplock unlock];
+            return;
+        }
+        [self.oplock unlock];
         
         if(result != kCCSuccess || _cryptor == NULL){
             
@@ -527,11 +546,18 @@
         }
         
         //write to file
+        [self.oplock lock];
         NSInteger writedLength;
-        if(![self isCancelled] && ![self isFinished]){
+        if(![self isCancelled] && ![self isFinished] && self.writeStream){
         
             writedLength=[self.writeStream write:dstBytes maxLength:dstLength];
+            
+        }else{
+        
+            [self.oplock unlock];
+            return;
         }
+        [self.oplock unlock];
         
         if(writedLength<0){
             //writing occur error
@@ -563,14 +589,20 @@
         return;
     }
     
+    [self.oplock lock];
     // Write the final block
-    if(![self isCancelled] && ![self isFinished]){
+    if(![self isCancelled] && ![self isFinished] && _cryptor!=NULL){
     
         result = CCCryptorFinal(_cryptor,        // cryptor
                                 dstBytes,       // dataOut
                                 dstBufferSize,  // dataOutAvailable
                                 &dstLength);    // dataOutMoved
+    }else{
+    
+        [self.oplock unlock];
+        return;
     }
+    [self.oplock unlock];
     
     //occur final block error.
     if(result != kCCSuccess || _cryptor == NULL){
@@ -586,11 +618,18 @@
     }
     
     //write to file
+    [self.oplock lock];
     NSInteger writedLength;
-    if(![self isCancelled] && ![self isFinished]){
+    if(![self isCancelled] && ![self isFinished] && self.writeStream){
     
         writedLength=[self.writeStream write:dstBytes maxLength:dstLength];
+    }else{
+    
+        [self.oplock unlock];
+        return;
     }
+    [self.oplock unlock];
+    
     if(writedLength<0){
         //writing occur error
         if(![self isCancelled] && ![self isFinished]){
@@ -715,6 +754,8 @@
 
 -(void)closeStream{
 
+    [self.oplock lock];
+    
     //close read stream
     if((self.readStream) &&
        (self.readStream.streamStatus!=NSStreamStatusClosed ||
@@ -733,10 +774,13 @@
     
     self.readStream=nil;
     self.writeStream=nil;
+    
+    [self.oplock unlock];
 }
 
 -(void)releaseCryptor{
 
+    [self.oplock lock];
     //release cryptor
     if(_cryptor != NULL){
         
@@ -744,6 +788,8 @@
         
         _cryptor=NULL;
     }
+    
+    [self.oplock unlock];
 }
 
 #pragma mark - Delete File
