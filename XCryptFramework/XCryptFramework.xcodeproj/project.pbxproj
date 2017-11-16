@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1691F2101FBC6B3000463A80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F20F1FBC6B3000463A80 /* AppDelegate.m */; };
+		1691F2131FBC6B3000463A80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2121FBC6B3000463A80 /* main.m */; };
+		1691F2161FBC6B3000463A80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2151FBC6B3000463A80 /* ViewController.m */; };
+		1691F2181FBC6B3000463A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1691F2171FBC6B3000463A80 /* Assets.xcassets */; };
+		1691F21B1FBC6B3000463A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1691F2191FBC6B3000463A80 /* Main.storyboard */; };
+		1691F2261FBC6B3000463A80 /* XCryptFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2251FBC6B3000463A80 /* XCryptFrameworkTests.m */; };
+		1691F2311FBC6B3000463A80 /* XCryptFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2301FBC6B3000463A80 /* XCryptFrameworkUITests.m */; };
+		1691F2441FBC6B8200463A80 /* NSImage+NSImageTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2411FBC6B8100463A80 /* NSImage+NSImageTint.m */; };
+		1691F2451FBC6B8200463A80 /* NSString+CateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2431FBC6B8100463A80 /* NSString+CateString.m */; };
+		1691F24E1FBC6B8E00463A80 /* XCryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2491FBC6B8E00463A80 /* XCryptManager.m */; };
+		1691F24F1FBC6B8E00463A80 /* XCryptRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F24C1FBC6B8E00463A80 /* XCryptRequest.m */; };
+		1691F2521FBC713F00463A80 /* TbCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691F2511FBC713F00463A80 /* TbCellView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1691F2221FBC6B3000463A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1691F2031FBC6B2F00463A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1691F20A1FBC6B2F00463A80;
+			remoteInfo = XCryptFramework;
+		};
+		1691F22D1FBC6B3000463A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1691F2031FBC6B2F00463A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1691F20A1FBC6B2F00463A80;
+			remoteInfo = XCryptFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1691F20B1FBC6B2F00463A80 /* XCryptFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCryptFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1691F20E1FBC6B3000463A80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1691F20F1FBC6B3000463A80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1691F2121FBC6B3000463A80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1691F2141FBC6B3000463A80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1691F2151FBC6B3000463A80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1691F2171FBC6B3000463A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1691F21A1FBC6B3000463A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1691F21C1FBC6B3000463A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1691F2211FBC6B3000463A80 /* XCryptFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCryptFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1691F2251FBC6B3000463A80 /* XCryptFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCryptFrameworkTests.m; sourceTree = "<group>"; };
+		1691F2271FBC6B3000463A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1691F22C1FBC6B3000463A80 /* XCryptFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCryptFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1691F2301FBC6B3000463A80 /* XCryptFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCryptFrameworkUITests.m; sourceTree = "<group>"; };
+		1691F2321FBC6B3000463A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1691F23F1FBC6B8100463A80 /* CategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesHeader.h; sourceTree = "<group>"; };
+		1691F2401FBC6B8100463A80 /* NSImage+NSImageTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+NSImageTint.h"; sourceTree = "<group>"; };
+		1691F2411FBC6B8100463A80 /* NSImage+NSImageTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+NSImageTint.m"; sourceTree = "<group>"; };
+		1691F2421FBC6B8100463A80 /* NSString+CateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CateString.h"; sourceTree = "<group>"; };
+		1691F2431FBC6B8100463A80 /* NSString+CateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CateString.m"; sourceTree = "<group>"; };
+		1691F2471FBC6B8E00463A80 /* XCrypteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCrypteHeader.h; sourceTree = "<group>"; };
+		1691F2481FBC6B8E00463A80 /* XCryptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptManager.h; sourceTree = "<group>"; };
+		1691F2491FBC6B8E00463A80 /* XCryptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCryptManager.m; sourceTree = "<group>"; };
+		1691F24A1FBC6B8E00463A80 /* XCryptManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptManagerProtocol.h; sourceTree = "<group>"; };
+		1691F24B1FBC6B8E00463A80 /* XCryptRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptRequest.h; sourceTree = "<group>"; };
+		1691F24C1FBC6B8E00463A80 /* XCryptRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCryptRequest.m; sourceTree = "<group>"; };
+		1691F24D1FBC6B8E00463A80 /* XCryptRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptRequestDelegate.h; sourceTree = "<group>"; };
+		1691F2501FBC713F00463A80 /* TbCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbCellView.h; sourceTree = "<group>"; };
+		1691F2511FBC713F00463A80 /* TbCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbCellView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1691F2081FBC6B2F00463A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F21E1FBC6B3000463A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F2291FBC6B3000463A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1691F2021FBC6B2F00463A80 = {
+			isa = PBXGroup;
+			children = (
+				1691F20D1FBC6B2F00463A80 /* XCryptFramework */,
+				1691F2241FBC6B3000463A80 /* XCryptFrameworkTests */,
+				1691F22F1FBC6B3000463A80 /* XCryptFrameworkUITests */,
+				1691F20C1FBC6B2F00463A80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1691F20C1FBC6B2F00463A80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1691F20B1FBC6B2F00463A80 /* XCryptFramework.app */,
+				1691F2211FBC6B3000463A80 /* XCryptFrameworkTests.xctest */,
+				1691F22C1FBC6B3000463A80 /* XCryptFrameworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1691F20D1FBC6B2F00463A80 /* XCryptFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1691F2461FBC6B8E00463A80 /* XCryptRequest */,
+				1691F23E1FBC6B8100463A80 /* Categories */,
+				1691F20E1FBC6B3000463A80 /* AppDelegate.h */,
+				1691F20F1FBC6B3000463A80 /* AppDelegate.m */,
+				1691F2141FBC6B3000463A80 /* ViewController.h */,
+				1691F2151FBC6B3000463A80 /* ViewController.m */,
+				1691F2501FBC713F00463A80 /* TbCellView.h */,
+				1691F2511FBC713F00463A80 /* TbCellView.m */,
+				1691F2171FBC6B3000463A80 /* Assets.xcassets */,
+				1691F2191FBC6B3000463A80 /* Main.storyboard */,
+				1691F21C1FBC6B3000463A80 /* Info.plist */,
+				1691F2111FBC6B3000463A80 /* Supporting Files */,
+			);
+			path = XCryptFramework;
+			sourceTree = "<group>";
+		};
+		1691F2111FBC6B3000463A80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1691F2121FBC6B3000463A80 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1691F2241FBC6B3000463A80 /* XCryptFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				1691F2251FBC6B3000463A80 /* XCryptFrameworkTests.m */,
+				1691F2271FBC6B3000463A80 /* Info.plist */,
+			);
+			path = XCryptFrameworkTests;
+			sourceTree = "<group>";
+		};
+		1691F22F1FBC6B3000463A80 /* XCryptFrameworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1691F2301FBC6B3000463A80 /* XCryptFrameworkUITests.m */,
+				1691F2321FBC6B3000463A80 /* Info.plist */,
+			);
+			path = XCryptFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		1691F23E1FBC6B8100463A80 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1691F23F1FBC6B8100463A80 /* CategoriesHeader.h */,
+				1691F2401FBC6B8100463A80 /* NSImage+NSImageTint.h */,
+				1691F2411FBC6B8100463A80 /* NSImage+NSImageTint.m */,
+				1691F2421FBC6B8100463A80 /* NSString+CateString.h */,
+				1691F2431FBC6B8100463A80 /* NSString+CateString.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1691F2461FBC6B8E00463A80 /* XCryptRequest */ = {
+			isa = PBXGroup;
+			children = (
+				1691F2471FBC6B8E00463A80 /* XCrypteHeader.h */,
+				1691F2481FBC6B8E00463A80 /* XCryptManager.h */,
+				1691F2491FBC6B8E00463A80 /* XCryptManager.m */,
+				1691F24A1FBC6B8E00463A80 /* XCryptManagerProtocol.h */,
+				1691F24B1FBC6B8E00463A80 /* XCryptRequest.h */,
+				1691F24C1FBC6B8E00463A80 /* XCryptRequest.m */,
+				1691F24D1FBC6B8E00463A80 /* XCryptRequestDelegate.h */,
+			);
+			path = XCryptRequest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1691F20A1FBC6B2F00463A80 /* XCryptFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1691F2351FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFramework" */;
+			buildPhases = (
+				1691F2071FBC6B2F00463A80 /* Sources */,
+				1691F2081FBC6B2F00463A80 /* Frameworks */,
+				1691F2091FBC6B2F00463A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCryptFramework;
+			productName = XCryptFramework;
+			productReference = 1691F20B1FBC6B2F00463A80 /* XCryptFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1691F2201FBC6B3000463A80 /* XCryptFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1691F2381FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFrameworkTests" */;
+			buildPhases = (
+				1691F21D1FBC6B3000463A80 /* Sources */,
+				1691F21E1FBC6B3000463A80 /* Frameworks */,
+				1691F21F1FBC6B3000463A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1691F2231FBC6B3000463A80 /* PBXTargetDependency */,
+			);
+			name = XCryptFrameworkTests;
+			productName = XCryptFrameworkTests;
+			productReference = 1691F2211FBC6B3000463A80 /* XCryptFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1691F22B1FBC6B3000463A80 /* XCryptFrameworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1691F23B1FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFrameworkUITests" */;
+			buildPhases = (
+				1691F2281FBC6B3000463A80 /* Sources */,
+				1691F2291FBC6B3000463A80 /* Frameworks */,
+				1691F22A1FBC6B3000463A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1691F22E1FBC6B3000463A80 /* PBXTargetDependency */,
+			);
+			name = XCryptFrameworkUITests;
+			productName = XCryptFrameworkUITests;
+			productReference = 1691F22C1FBC6B3000463A80 /* XCryptFrameworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1691F2031FBC6B2F00463A80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = wjg;
+				TargetAttributes = {
+					1691F20A1FBC6B2F00463A80 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1691F2201FBC6B3000463A80 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1691F20A1FBC6B2F00463A80;
+					};
+					1691F22B1FBC6B3000463A80 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1691F20A1FBC6B2F00463A80;
+					};
+				};
+			};
+			buildConfigurationList = 1691F2061FBC6B2F00463A80 /* Build configuration list for PBXProject "XCryptFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1691F2021FBC6B2F00463A80;
+			productRefGroup = 1691F20C1FBC6B2F00463A80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1691F20A1FBC6B2F00463A80 /* XCryptFramework */,
+				1691F2201FBC6B3000463A80 /* XCryptFrameworkTests */,
+				1691F22B1FBC6B3000463A80 /* XCryptFrameworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1691F2091FBC6B2F00463A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1691F2181FBC6B3000463A80 /* Assets.xcassets in Resources */,
+				1691F21B1FBC6B3000463A80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F21F1FBC6B3000463A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F22A1FBC6B3000463A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1691F2071FBC6B2F00463A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1691F2521FBC713F00463A80 /* TbCellView.m in Sources */,
+				1691F2161FBC6B3000463A80 /* ViewController.m in Sources */,
+				1691F24E1FBC6B8E00463A80 /* XCryptManager.m in Sources */,
+				1691F2131FBC6B3000463A80 /* main.m in Sources */,
+				1691F2441FBC6B8200463A80 /* NSImage+NSImageTint.m in Sources */,
+				1691F2101FBC6B3000463A80 /* AppDelegate.m in Sources */,
+				1691F2451FBC6B8200463A80 /* NSString+CateString.m in Sources */,
+				1691F24F1FBC6B8E00463A80 /* XCryptRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F21D1FBC6B3000463A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1691F2261FBC6B3000463A80 /* XCryptFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1691F2281FBC6B3000463A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1691F2311FBC6B3000463A80 /* XCryptFrameworkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1691F2231FBC6B3000463A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1691F20A1FBC6B2F00463A80 /* XCryptFramework */;
+			targetProxy = 1691F2221FBC6B3000463A80 /* PBXContainerItemProxy */;
+		};
+		1691F22E1FBC6B3000463A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1691F20A1FBC6B2F00463A80 /* XCryptFramework */;
+			targetProxy = 1691F22D1FBC6B3000463A80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1691F2191FBC6B3000463A80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1691F21A1FBC6B3000463A80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1691F2331FBC6B3000463A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1691F2341FBC6B3000463A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1691F2361FBC6B3000463A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFramework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1691F2371FBC6B3000463A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFramework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1691F2391FBC6B3000463A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCryptFramework.app/Contents/MacOS/XCryptFramework";
+			};
+			name = Debug;
+		};
+		1691F23A1FBC6B3000463A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCryptFramework.app/Contents/MacOS/XCryptFramework";
+			};
+			name = Release;
+		};
+		1691F23C1FBC6B3000463A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFrameworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFrameworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XCryptFramework;
+			};
+			name = Debug;
+		};
+		1691F23D1FBC6B3000463A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCryptFrameworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = proj.demo.XCryptFrameworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XCryptFramework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1691F2061FBC6B2F00463A80 /* Build configuration list for PBXProject "XCryptFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1691F2331FBC6B3000463A80 /* Debug */,
+				1691F2341FBC6B3000463A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1691F2351FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1691F2361FBC6B3000463A80 /* Debug */,
+				1691F2371FBC6B3000463A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1691F2381FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1691F2391FBC6B3000463A80 /* Debug */,
+				1691F23A1FBC6B3000463A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1691F23B1FBC6B3000463A80 /* Build configuration list for PBXNativeTarget "XCryptFrameworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1691F23C1FBC6B3000463A80 /* Debug */,
+				1691F23D1FBC6B3000463A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1691F2031FBC6B2F00463A80 /* Project object */;
+}
