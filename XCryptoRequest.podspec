@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XCryptoRequest"
   s.version      = "1.0.0"
-  s.summary      = "A short description of XCryptoRequest."
+  s.summary      = "multi thread XCryptoRequest."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
