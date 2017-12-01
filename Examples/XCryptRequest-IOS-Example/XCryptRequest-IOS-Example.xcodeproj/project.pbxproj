@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FCB14781FBD89AD00916496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14771FBD89AD00916496 /* main.m */; };
+		2FCB147B1FBD89AD00916496 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB147A1FBD89AD00916496 /* AppDelegate.m */; };
+		2FCB147E1FBD89AD00916496 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB147D1FBD89AD00916496 /* FirstViewController.m */; };
+		2FCB14811FBD89AD00916496 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14801FBD89AD00916496 /* SecondViewController.m */; };
+		2FCB14841FBD89AD00916496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB14821FBD89AD00916496 /* Main.storyboard */; };
+		2FCB14861FBD89AD00916496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB14851FBD89AD00916496 /* Assets.xcassets */; };
+		2FCB14891FBD89AD00916496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB14871FBD89AD00916496 /* LaunchScreen.storyboard */; };
+		2FCB14941FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14931FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m */; };
+		2FCB149F1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB149E1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m */; };
+		2FCB14AE1FBD8BC200916496 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14AD1FBD8BC200916496 /* TableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FCB14901FBD89AE00916496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCB146B1FBD89AD00916496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FCB14721FBD89AD00916496;
+			remoteInfo = "XCryptRequest-IOS-Example";
+		};
+		2FCB149B1FBD89AE00916496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCB146B1FBD89AD00916496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FCB14721FBD89AD00916496;
+			remoteInfo = "XCryptRequest-IOS-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FCB14731FBD89AD00916496 /* XCryptRequest-IOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCryptRequest-IOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCB14771FBD89AD00916496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FCB14791FBD89AD00916496 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FCB147A1FBD89AD00916496 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FCB147C1FBD89AD00916496 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2FCB147D1FBD89AD00916496 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2FCB147F1FBD89AD00916496 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2FCB14801FBD89AD00916496 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2FCB14831FBD89AD00916496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FCB14851FBD89AD00916496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FCB14881FBD89AD00916496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FCB148A1FBD89AD00916496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCB148F1FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCryptRequest-IOS-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCB14931FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCryptRequest_IOS_ExampleTests.m; sourceTree = "<group>"; };
+		2FCB14951FBD89AE00916496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCB149A1FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCryptRequest-IOS-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCB149E1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCryptRequest_IOS_ExampleUITests.m; sourceTree = "<group>"; };
+		2FCB14A01FBD89AE00916496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCB14AC1FBD8BC200916496 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2FCB14AD1FBD8BC200916496 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FCB14701FBD89AD00916496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB148C1FBD89AE00916496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB14971FBD89AE00916496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FCB146A1FBD89AD00916496 = {
+			isa = PBXGroup;
+			children = (
+				2FCB14751FBD89AD00916496 /* XCryptRequest-IOS-Example */,
+				2FCB14921FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests */,
+				2FCB149D1FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests */,
+				2FCB14741FBD89AD00916496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FCB14741FBD89AD00916496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB14731FBD89AD00916496 /* XCryptRequest-IOS-Example.app */,
+				2FCB148F1FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests.xctest */,
+				2FCB149A1FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FCB14751FBD89AD00916496 /* XCryptRequest-IOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB14791FBD89AD00916496 /* AppDelegate.h */,
+				2FCB147A1FBD89AD00916496 /* AppDelegate.m */,
+				2FCB147C1FBD89AD00916496 /* FirstViewController.h */,
+				2FCB147D1FBD89AD00916496 /* FirstViewController.m */,
+				2FCB147F1FBD89AD00916496 /* SecondViewController.h */,
+				2FCB14801FBD89AD00916496 /* SecondViewController.m */,
+				2FCB14AC1FBD8BC200916496 /* TableViewCell.h */,
+				2FCB14AD1FBD8BC200916496 /* TableViewCell.m */,
+				2FCB14821FBD89AD00916496 /* Main.storyboard */,
+				2FCB14851FBD89AD00916496 /* Assets.xcassets */,
+				2FCB14871FBD89AD00916496 /* LaunchScreen.storyboard */,
+				2FCB148A1FBD89AD00916496 /* Info.plist */,
+				2FCB14761FBD89AD00916496 /* Supporting Files */,
+			);
+			path = "XCryptRequest-IOS-Example";
+			sourceTree = "<group>";
+		};
+		2FCB14761FBD89AD00916496 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB14771FBD89AD00916496 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FCB14921FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB14931FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m */,
+				2FCB14951FBD89AE00916496 /* Info.plist */,
+			);
+			path = "XCryptRequest-IOS-ExampleTests";
+			sourceTree = "<group>";
+		};
+		2FCB149D1FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB149E1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m */,
+				2FCB14A01FBD89AE00916496 /* Info.plist */,
+			);
+			path = "XCryptRequest-IOS-ExampleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FCB14721FBD89AD00916496 /* XCryptRequest-IOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCB14A31FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-Example" */;
+			buildPhases = (
+				2FCB146F1FBD89AD00916496 /* Sources */,
+				2FCB14701FBD89AD00916496 /* Frameworks */,
+				2FCB14711FBD89AD00916496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XCryptRequest-IOS-Example";
+			productName = "XCryptRequest-IOS-Example";
+			productReference = 2FCB14731FBD89AD00916496 /* XCryptRequest-IOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FCB148E1FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCB14A61FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleTests" */;
+			buildPhases = (
+				2FCB148B1FBD89AE00916496 /* Sources */,
+				2FCB148C1FBD89AE00916496 /* Frameworks */,
+				2FCB148D1FBD89AE00916496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FCB14911FBD89AE00916496 /* PBXTargetDependency */,
+			);
+			name = "XCryptRequest-IOS-ExampleTests";
+			productName = "XCryptRequest-IOS-ExampleTests";
+			productReference = 2FCB148F1FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FCB14991FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCB14A91FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleUITests" */;
+			buildPhases = (
+				2FCB14961FBD89AE00916496 /* Sources */,
+				2FCB14971FBD89AE00916496 /* Frameworks */,
+				2FCB14981FBD89AE00916496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FCB149C1FBD89AE00916496 /* PBXTargetDependency */,
+			);
+			name = "XCryptRequest-IOS-ExampleUITests";
+			productName = "XCryptRequest-IOS-ExampleUITests";
+			productReference = 2FCB149A1FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FCB146B1FBD89AD00916496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = wujungao;
+				TargetAttributes = {
+					2FCB14721FBD89AD00916496 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6NY5Z2C74Y;
+						ProvisioningStyle = Automatic;
+					};
+					2FCB148E1FBD89AE00916496 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2FCB14721FBD89AD00916496;
+					};
+					2FCB14991FBD89AE00916496 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2FCB14721FBD89AD00916496;
+					};
+				};
+			};
+			buildConfigurationList = 2FCB146E1FBD89AD00916496 /* Build configuration list for PBXProject "XCryptRequest-IOS-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FCB146A1FBD89AD00916496;
+			productRefGroup = 2FCB14741FBD89AD00916496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FCB14721FBD89AD00916496 /* XCryptRequest-IOS-Example */,
+				2FCB148E1FBD89AE00916496 /* XCryptRequest-IOS-ExampleTests */,
+				2FCB14991FBD89AE00916496 /* XCryptRequest-IOS-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FCB14711FBD89AD00916496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCB14891FBD89AD00916496 /* LaunchScreen.storyboard in Resources */,
+				2FCB14861FBD89AD00916496 /* Assets.xcassets in Resources */,
+				2FCB14841FBD89AD00916496 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB148D1FBD89AE00916496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB14981FBD89AE00916496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FCB146F1FBD89AD00916496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCB14811FBD89AD00916496 /* SecondViewController.m in Sources */,
+				2FCB147B1FBD89AD00916496 /* AppDelegate.m in Sources */,
+				2FCB147E1FBD89AD00916496 /* FirstViewController.m in Sources */,
+				2FCB14AE1FBD8BC200916496 /* TableViewCell.m in Sources */,
+				2FCB14781FBD89AD00916496 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB148B1FBD89AE00916496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCB14941FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FCB14961FBD89AE00916496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCB149F1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FCB14911FBD89AE00916496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FCB14721FBD89AD00916496 /* XCryptRequest-IOS-Example */;
+			targetProxy = 2FCB14901FBD89AE00916496 /* PBXContainerItemProxy */;
+		};
+		2FCB149C1FBD89AE00916496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FCB14721FBD89AD00916496 /* XCryptRequest-IOS-Example */;
+			targetProxy = 2FCB149B1FBD89AE00916496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FCB14821FBD89AD00916496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FCB14831FBD89AD00916496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FCB14871FBD89AD00916496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FCB14881FBD89AD00916496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FCB14A11FBD89AE00916496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FCB14A21FBD89AE00916496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FCB14A41FBD89AE00916496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6NY5Z2C74Y;
+				INFOPLIST_FILE = "XCryptRequest-IOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FCB14A51FBD89AE00916496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6NY5Z2C74Y;
+				INFOPLIST_FILE = "XCryptRequest-IOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FCB14A71FBD89AE00916496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "XCryptRequest-IOS-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCryptRequest-IOS-Example.app/XCryptRequest-IOS-Example";
+			};
+			name = Debug;
+		};
+		2FCB14A81FBD89AE00916496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "XCryptRequest-IOS-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCryptRequest-IOS-Example.app/XCryptRequest-IOS-Example";
+			};
+			name = Release;
+		};
+		2FCB14AA1FBD89AE00916496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XCryptRequest-IOS-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "XCryptRequest-IOS-Example";
+			};
+			name = Debug;
+		};
+		2FCB14AB1FBD89AE00916496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XCryptRequest-IOS-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wujungao.XCryptRequest-IOS-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "XCryptRequest-IOS-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FCB146E1FBD89AD00916496 /* Build configuration list for PBXProject "XCryptRequest-IOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCB14A11FBD89AE00916496 /* Debug */,
+				2FCB14A21FBD89AE00916496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FCB14A31FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCB14A41FBD89AE00916496 /* Debug */,
+				2FCB14A51FBD89AE00916496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FCB14A61FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCB14A71FBD89AE00916496 /* Debug */,
+				2FCB14A81FBD89AE00916496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FCB14A91FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCB14AA1FBD89AE00916496 /* Debug */,
+				2FCB14AB1FBD89AE00916496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FCB146B1FBD89AD00916496 /* Project object */;
+}
