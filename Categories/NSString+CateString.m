@@ -14,7 +14,7 @@
     
     if(string &&
        [string isKindOfClass:[NSString class]] &&
-       string.length!=0){
+       string.length>0){
 
         return NO;
         
