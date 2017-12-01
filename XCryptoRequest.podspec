@@ -104,6 +104,9 @@ XCryptoRequest is a multi-thread AES-CBC En-Decrypt framework. And also can exte
 
   # s.public_header_files = "Classes/**/*.h"
 
+  s.ios.frameworks = 'UIKit'
+  s.osx.frameworks = 'APPKit'
+  s.frameworks = 'Foundation'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

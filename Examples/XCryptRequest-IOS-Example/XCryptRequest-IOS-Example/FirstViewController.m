@@ -10,10 +10,6 @@
 
 #import "TableViewCell.h"
 
-#import "XCryptManagerProtocol.h"
-#import "XCryptManager.h"
-
-
 @interface FirstViewController ()<XCryptManagerProtocol,UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
