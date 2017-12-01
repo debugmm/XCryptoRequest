@@ -1,6 +1,5 @@
 //
 //  NSString+CateString.h
-//  SyncHelper
 //
 //  Created by wjg on 22/09/2017.
 //  Copyright © 2017 wjg All rights reserved.

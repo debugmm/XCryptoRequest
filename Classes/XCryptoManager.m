@@ -218,7 +218,10 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     
         if([sender respondsToSelector:@selector(xcryptoProgressValue:sourceFilePath:desFilePath:callbackParam:)]){
             
-            [sender xcryptoProgressValue:ratioValue sourceFilePath:XCryptoRequest.sourceFilePath desFilePath:XCryptoRequest.desFilePath callbackParam:cbp];
+            [sender xcryptoProgressValue:ratioValue
+                          sourceFilePath:XCryptoRequest.sourceFilePath
+                             desFilePath:XCryptoRequest.desFilePath
+                           callbackParam:cbp];
         }
     }
     NSLog(@"ratioValue:%f\n",ratioValue);

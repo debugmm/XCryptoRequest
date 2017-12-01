@@ -40,7 +40,7 @@ XCryptoRequest is a multi-thread AES-CBC En-Decrypt framework. And also can exte
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -99,14 +99,13 @@ XCryptoRequest is a multi-thread AES-CBC En-Decrypt framework. And also can exte
   s.source_files  = "**/*.{h,m}"
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
- 
-  s.requires_arc = true
+
+  #s.requires_arc = true
 
   # s.public_header_files = "Classes/**/*.h"
 
-  #s.ios.frameworks = 'UIKit'
-  #s.osx.frameworks = 'Cocoa'
-  s.frameworks = 'Foundation'
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.7'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

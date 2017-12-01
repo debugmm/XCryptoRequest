@@ -21,8 +21,8 @@
  @discussion callbackParam,example:data model
  */
 -(void)finishedXCrypto:(NSString *)sourceFilePath
-          desFilePath:(NSString *)desFilePath
-        callbackParam:(id)callbackParam;
+           desFilePath:(NSString *)desFilePath
+         callbackParam:(id)callbackParam;
 
 
 /**
@@ -37,10 +37,10 @@
  @discussion callbackParam,example:data model
  */
 -(void)failedXCrypto:(NSString *)sourceFilePath
-        desFilePath:(NSString *)desFilePath
-      callbackParam:(id)callbackParam
-   failedStatusCode:(NSInteger)statusCode
-          failedMsg:(NSString *)failedMsg;
+         desFilePath:(NSString *)desFilePath
+       callbackParam:(id)callbackParam
+    failedStatusCode:(NSInteger)statusCode
+           failedMsg:(NSString *)failedMsg;
 
 /**
  @Description 文件加密/解密已取消
@@ -52,8 +52,8 @@
  @discussion callbackParam,example:data model
  */
 -(void)canceledXCrypto:(NSString *)sourceFilePath
-          desFilePath:(NSString *)desFilePath
-        callbackParam:(id)callbackParam;
+           desFilePath:(NSString *)desFilePath
+         callbackParam:(id)callbackParam;
 
 #pragma mark - track progress
 
@@ -68,9 +68,9 @@
  @discussion callbackParam,example:data model
  */
 -(void)xcryptoProgressValue:(float)progressValue
-            sourceFilePath:(NSString *)sourceFilePath
-               desFilePath:(NSString *)desFilePath
-             callbackParam:(id)callbackParam;
+             sourceFilePath:(NSString *)sourceFilePath
+                desFilePath:(NSString *)desFilePath
+              callbackParam:(id)callbackParam;
 
 
 @end
