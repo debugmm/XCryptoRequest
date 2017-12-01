@@ -1,6 +1,5 @@
 //
-//  XCryptRequest.h
-//  SyncHelper
+//  XCryptoRequest.h
 //
 //  Created by wjg on 13/11/2017.
 //  Copyright © 2017 wjg All rights reserved.
@@ -12,7 +11,7 @@
 
 #import <CommonCrypto/CommonCryptor.h>
 
-typedef NS_ENUM(NSInteger,XCryptErrorType){
+typedef NS_ENUM(NSInteger,XCryptoErrorType){
     
     CryptNoneError=0,
     
@@ -74,7 +73,7 @@ typedef unsigned long long fileSize_t;
 
 @property(nonatomic,readonly,assign)fileSize_t xcryptSize;//xcryp progress size
 
-@property(nonatomic,assign)id<XCryptoRequestDelegate> delegate;//XCryptRequest delegate
+@property(nonatomic,assign)id<XCryptoRequestDelegate> delegate;//XCryptoRequest delegate
 
 #pragma mark -
 //@property(

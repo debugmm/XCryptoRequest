@@ -1,12 +1,11 @@
 //
-//  XCrypteHeader.h
-//  SyncHelper
+//  XCryptoHeader.h
 //
 //  Created by wjg on 13/11/2017.
 //  Copyright © 2017 wjg All rights reserved.
 //
 
-/* XCrypteHeader_h */
+/* XCryptoHeader_h */
 #import "XCryptoRequest.h"
 #import "XCryptoRequestDelegate.h"
 

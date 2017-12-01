@@ -1,6 +1,5 @@
 //
-//  XCryptManagerProtocol.h
-//  SyncHelper
+//  XCryptoManagerProtocol.h
 //
 //  Created by wjg on 14/11/2017.
 //  Copyright © 2017 wjg All rights reserved.
@@ -11,7 +10,7 @@
 @protocol XCryptoManagerProtocol <NSObject>
 
 @optional
-#pragma mark - XCrypt(Encrypt/Decrypt)
+#pragma mark - XCrypto(Encrypt/Decrypt)
 /**
  @Description 完成文件加密/解密
 

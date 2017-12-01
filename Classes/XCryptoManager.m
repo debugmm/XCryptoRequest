@@ -1,6 +1,5 @@
 //
-//  XCryptManager.m
-//  SyncHelper
+//  XCryptoManager.m
 //
 //  Created by wjg on 14/11/2017.
 //  Copyright © 2017 wjg All rights reserved.
@@ -53,7 +52,7 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
 }
 
 #pragma mark - Send XCrypt Request
--(void)sendAESCBCXCryptRequest:(id)sender
+-(void)sendAESCBCXCryptoRequest:(id)sender
                   requestParam:(NSDictionary *)param
                  callbackParam:(id)callbackParam{
     
@@ -102,19 +101,19 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
         
 }
 
--(void)addOperationRequestToShareQueue:(XCryptRequest *)xr{
+-(void)addOperationRequestToShareQueue:(XCryptoRequest *)xr{
 
     if(xr){
     
-        [[XCryptRequest shareQueue] addOperation:xr];
+        [[XCryptoRequest shareQueue] addOperation:xr];
     }
 }
 
 #pragma mark - Cancel Request
--(void)cancelXCryptRequest:(id)sender
+-(void)cancelXCryptoRequest:(id)sender
                 requestTag:(id)requestTag{
     
-    NSLog(@"cancelXCryptRequest");
+    NSLog(@"cancelXCryptoRequest");
     [self operationRequest:RemoveObjectType
                     object:nil
                 requestTag:requestTag
@@ -131,12 +130,12 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     [self.opLock lock];
     NSLog(@"cancel,thread:%@",[NSThread currentThread]);
     
-    __block XCryptRequest *mid;
+    __block XCryptoRequest *mid;
     __block BOOL existRequest=NO;
     
     [self.requests enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        XCryptRequest *xr=(XCryptRequest *)obj;
+        XCryptoRequest *xr=(XCryptoRequest *)obj;
         
         NSString *cbp=[xr.userInfo objectForKey:XCryptCallBackParam];
         
@@ -172,54 +171,54 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     }
 }
 
-#pragma mark - XCrypt Request Delegate
--(void)succeededXCryptRequest:(XCryptRequest *)xcryptRequest{
+#pragma mark - XCrypto Request Delegate
+-(void)succeededXCryptoRequest:(XCryptoRequest *)XCryptoRequest{
     
-    id sender=[xcryptRequest.userInfo objectForKey:XCryptSender];
-    id cbp=[xcryptRequest.userInfo objectForKey:XCryptCallBackParam];
+    id sender=[XCryptoRequest.userInfo objectForKey:XCryptSender];
+    id cbp=[XCryptoRequest.userInfo objectForKey:XCryptCallBackParam];
     
-    if(sender && [sender conformsToProtocol:@protocol(XCryptManagerProtocol)]){
+    if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
         
         if([sender respondsToSelector:@selector(finishedXCrypt:desFilePath:callbackParam:)]){
         
-            [sender finishedXCrypt:xcryptRequest.sourceFilePath
-                       desFilePath:xcryptRequest.desFilePath
+            [sender finishedXCrypt:XCryptoRequest.sourceFilePath
+                       desFilePath:XCryptoRequest.desFilePath
                      callbackParam:cbp];
         }
     }
-    NSLog(@"succeededXCryptRequest\n");
+    NSLog(@"succeededXCryptoRequest\n");
 }
 
--(void)failedXCryptRequest:(XCryptRequest *)xcryptRequest{
+-(void)failedXCryptoRequest:(XCryptoRequest *)XCryptoRequest{
 
-    NSLog(@"failedXCryptRequest\n");
-    id sender=[xcryptRequest.userInfo objectForKey:XCryptSender];
-    id cbp=[xcryptRequest.userInfo objectForKey:XCryptCallBackParam];
+    NSLog(@"failedXCryptoRequest\n");
+    id sender=[XCryptoRequest.userInfo objectForKey:XCryptSender];
+    id cbp=[XCryptoRequest.userInfo objectForKey:XCryptCallBackParam];
     
-    if(sender && [sender conformsToProtocol:@protocol(XCryptManagerProtocol)]){
+    if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
         
         if([sender respondsToSelector:@selector(failedXCrypt:desFilePath:callbackParam:failedStatusCode:failedMsg:)]){
             
-            [sender failedXCrypt:xcryptRequest.sourceFilePath
-                     desFilePath:xcryptRequest.desFilePath
+            [sender failedXCrypt:XCryptoRequest.sourceFilePath
+                     desFilePath:XCryptoRequest.desFilePath
                    callbackParam:cbp
-                failedStatusCode:xcryptRequest.er.code
+                failedStatusCode:XCryptoRequest.er.code
                        failedMsg:@""];
         }
     }
 }
 
--(void)xcryptRequest:(XCryptRequest *)xcryptRequest
+-(void)XCryptoRequest:(XCryptoRequest *)XCryptoRequest
   progressRatioValue:(float)ratioValue{
 
-    id sender=[xcryptRequest.userInfo objectForKey:XCryptSender];
-    id cbp=[xcryptRequest.userInfo objectForKey:XCryptCallBackParam];
+    id sender=[XCryptoRequest.userInfo objectForKey:XCryptSender];
+    id cbp=[XCryptoRequest.userInfo objectForKey:XCryptCallBackParam];
     
-    if(sender && [sender conformsToProtocol:@protocol(XCryptManagerProtocol)]){
+    if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
     
         if([sender respondsToSelector:@selector(xcryptProgressValue:sourceFilePath:desFilePath:callbackParam:)]){
             
-            [sender xcryptProgressValue:ratioValue sourceFilePath:xcryptRequest.sourceFilePath desFilePath:xcryptRequest.desFilePath callbackParam:cbp];
+            [sender xcryptProgressValue:ratioValue sourceFilePath:XCryptoRequest.sourceFilePath desFilePath:XCryptoRequest.desFilePath callbackParam:cbp];
         }
     }
     NSLog(@"ratioValue:%f\n",ratioValue);

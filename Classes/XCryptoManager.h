@@ -1,6 +1,5 @@
 //
-//  XCryptManager.h
-//  SyncHelper
+//  XCryptoManager.h
 //
 //  Created by wjg on 14/11/2017.
 //  Copyright © 2017 wjg All rights reserved.
@@ -20,10 +19,10 @@
 #pragma mark - Send Request
 
 /**
- @Description send XCrypt Request
+ @Description send XCrypto Request
 
  @param sender sender
- @param param XCrypt Param
+ @param param XCrypto Param
  @param callbackParam callbackParam
  
  @discussion callbackParam,example:data model
@@ -33,21 +32,21 @@
                                     @"SourceFilePath":sourceFilePath}
  
  */
--(void)sendAESCBCXCryptRequest:(id)sender
-                  requestParam:(NSDictionary *)param
-                 callbackParam:(id)callbackParam;
+-(void)sendAESCBCXCryptoRequest:(id)sender
+                   requestParam:(NSDictionary *)param
+                  callbackParam:(id)callbackParam;
 
-#pragma mark - Cancel A XCrypt Request
+#pragma mark - Cancel A XCrypto Request
 
 /**
- @Description Cancel A XCrypt Request
+ @Description Cancel A XCrypto Request
 
  @param sender sender
  @param requestTag a request tag
  
  @discussion requestTag Most likely:model data
  */
--(void)cancelXCryptRequest:(id)sender
-                requestTag:(id)requestTag;
+-(void)cancelXCryptoRequest:(id)sender
+                 requestTag:(id)requestTag;
 
 @end
