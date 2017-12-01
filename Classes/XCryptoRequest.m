@@ -652,11 +652,11 @@
 -(void)trackProgress{
 
     if(self.delegate &&
-       [self.delegate respondsToSelector:@selector(XCryptoRequest:progressRatioValue:)]){
+       [self.delegate respondsToSelector:@selector(xcryptoRequest:progressRatioValue:)]){
     
         float ratio=(self.fileSize<=0) ? 0.0 : ((self.xcryptSize*1.0)/(self.fileSize*1.0));
         
-        [self.delegate XCryptoRequest:self progressRatioValue:ratio];
+        [self.delegate xcryptoRequest:self progressRatioValue:ratio];
     }
     
     NSLog(@"%@",[NSThread currentThread]);

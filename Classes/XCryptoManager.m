@@ -179,11 +179,11 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     
     if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
         
-        if([sender respondsToSelector:@selector(finishedXCrypt:desFilePath:callbackParam:)]){
+        if([sender respondsToSelector:@selector(finishedXCrypto:desFilePath:callbackParam:)]){
         
-            [sender finishedXCrypt:XCryptoRequest.sourceFilePath
-                       desFilePath:XCryptoRequest.desFilePath
-                     callbackParam:cbp];
+            [sender finishedXCrypto:XCryptoRequest.sourceFilePath
+                        desFilePath:XCryptoRequest.desFilePath
+                      callbackParam:cbp];
         }
     }
     NSLog(@"succeededXCryptoRequest\n");
@@ -197,13 +197,13 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     
     if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
         
-        if([sender respondsToSelector:@selector(failedXCrypt:desFilePath:callbackParam:failedStatusCode:failedMsg:)]){
+        if([sender respondsToSelector:@selector(failedXCrypto:desFilePath:callbackParam:failedStatusCode:failedMsg:)]){
             
-            [sender failedXCrypt:XCryptoRequest.sourceFilePath
-                     desFilePath:XCryptoRequest.desFilePath
-                   callbackParam:cbp
-                failedStatusCode:XCryptoRequest.er.code
-                       failedMsg:@""];
+            [sender failedXCrypto:XCryptoRequest.sourceFilePath
+                      desFilePath:XCryptoRequest.desFilePath
+                    callbackParam:cbp
+                 failedStatusCode:XCryptoRequest.er.code
+                        failedMsg:@""];
         }
     }
 }
@@ -216,9 +216,9 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     
     if(sender && [sender conformsToProtocol:@protocol(XCryptoManagerProtocol)]){
     
-        if([sender respondsToSelector:@selector(xcryptProgressValue:sourceFilePath:desFilePath:callbackParam:)]){
+        if([sender respondsToSelector:@selector(xcryptoProgressValue:sourceFilePath:desFilePath:callbackParam:)]){
             
-            [sender xcryptProgressValue:ratioValue sourceFilePath:XCryptoRequest.sourceFilePath desFilePath:XCryptoRequest.desFilePath callbackParam:cbp];
+            [sender xcryptoProgressValue:ratioValue sourceFilePath:XCryptoRequest.sourceFilePath desFilePath:XCryptoRequest.desFilePath callbackParam:cbp];
         }
     }
     NSLog(@"ratioValue:%f\n",ratioValue);
