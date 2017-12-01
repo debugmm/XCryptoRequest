@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol XCryptManagerProtocol <NSObject>
+@protocol XCryptoManagerProtocol <NSObject>
 
 @optional
 #pragma mark - XCrypt(Encrypt/Decrypt)
@@ -21,7 +21,7 @@
  
  @discussion callbackParam,example:data model
  */
--(void)finishedXCrypt:(NSString *)sourceFilePath
+-(void)finishedXCrypto:(NSString *)sourceFilePath
           desFilePath:(NSString *)desFilePath
         callbackParam:(id)callbackParam;
 
@@ -37,7 +37,7 @@
  
  @discussion callbackParam,example:data model
  */
--(void)failedXCrypt:(NSString *)sourceFilePath
+-(void)failedXCrypto:(NSString *)sourceFilePath
         desFilePath:(NSString *)desFilePath
       callbackParam:(id)callbackParam
    failedStatusCode:(NSInteger)statusCode
@@ -52,7 +52,7 @@
  
  @discussion callbackParam,example:data model
  */
--(void)canceledXCrypt:(NSString *)sourceFilePath
+-(void)canceledXCrypto:(NSString *)sourceFilePath
           desFilePath:(NSString *)desFilePath
         callbackParam:(id)callbackParam;
 
@@ -68,7 +68,7 @@
  
  @discussion callbackParam,example:data model
  */
--(void)xcryptProgressValue:(float)progressValue
+-(void)xcryptoProgressValue:(float)progressValue
             sourceFilePath:(NSString *)sourceFilePath
                desFilePath:(NSString *)desFilePath
              callbackParam:(id)callbackParam;

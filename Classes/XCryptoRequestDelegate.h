@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class XCryptRequest;
+@class XCryptoRequest;
 
-@protocol XCryptRequestDelegate <NSObject>
+@protocol XCryptoRequestDelegate <NSObject>
 
 @optional
 #pragma mark - Finished XCrypt Request
@@ -19,14 +19,14 @@
 
  @param xcryptRequest xcrypt Request
  */
--(void)succeededXCryptRequest:(XCryptRequest *)xcryptRequest;
+-(void)succeededXCryptoRequest:(XCryptoRequest *)xcryptoRequest;
 
 /**
  @Description xcrypt Request failed
 
  @param xcryptRequest xcrypt Request
  */
--(void)failedXCryptRequest:(XCryptRequest *)xcryptRequest;
+-(void)failedXCryptoRequest:(XCryptoRequest *)xcryptoRequest;
 
 #pragma mark - Track XCrypt Request Progress
 /**
@@ -35,6 +35,6 @@
  @param xcryptRequest XCrypt Request
  @param ratioValue float type ratio Value
  */
--(void)xcryptRequest:(XCryptRequest *)xcryptRequest progressRatioValue:(float)ratioValue;
+-(void)xcryptoRequest:(XCryptoRequest *)xcryptoRequest progressRatioValue:(float)ratioValue;
 
 @end

@@ -7,8 +7,8 @@
 //
 
 /* XCrypteHeader_h */
-#import "XCryptRequest.h"
-#import "XCryptRequestDelegate.h"
+#import "XCryptoRequest.h"
+#import "XCryptoRequestDelegate.h"
 
-#import "XCryptManager.h"
-#import "XCryptManagerProtocol.h"
+#import "XCryptoManager.h"
+#import "XCryptoManagerProtocol.h"

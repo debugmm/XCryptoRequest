@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XCryptManager : NSObject
+@interface XCryptoManager : NSObject
 
 /**
  @Description file en/decrypt 
 
  @return singleton shared manager
  */
-+(XCryptManager *)sharedManager;
++(XCryptoManager *)sharedManager;
 
 #pragma mark - Send Request
 

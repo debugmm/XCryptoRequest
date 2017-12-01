@@ -6,11 +6,11 @@
 //  Copyright © 2017 wjg All rights reserved.
 //
 
-#import "XCryptManager.h"
-#import "XCryptRequest.h"
+#import "XCryptoManager.h"
+#import "XCryptoRequest.h"
 
-#import "XCryptRequestDelegate.h"
-#import "XCryptManagerProtocol.h"
+#import "XCryptoRequestDelegate.h"
+#import "XCryptoManagerProtocol.h"
 
 #define XCryptKey (@"Key")
 #define XCryptIV (@"IV")
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
     AddObjectType=2,
 };
 
-@interface XCryptManager()<XCryptRequestDelegate>
+@interface XCryptoManager()<XCryptoRequestDelegate>
 
 @property(nonatomic,strong)NSMutableArray *requests;//save request
 
@@ -34,16 +34,16 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
 
 @end
 
-@implementation XCryptManager
+@implementation XCryptoManager
 
-+(XCryptManager *)sharedManager{
++(XCryptoManager *)sharedManager{
     
     static dispatch_once_t onceToken;
-    static XCryptManager *sharedManager;
+    static XCryptoManager *sharedManager;
     
     dispatch_once(&onceToken, ^{
         
-        sharedManager=[[XCryptManager alloc] init];
+        sharedManager=[[XCryptoManager alloc] init];
         
         sharedManager.requests=[[NSMutableArray alloc] initWithCapacity:1];
         sharedManager.opLock=[[NSRecursiveLock alloc] init];
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger,OpRequestsType){
                   requestParam:(NSDictionary *)param
                  callbackParam:(id)callbackParam{
     
-    XCryptRequest *xr=[[XCryptRequest alloc] init];
+    XCryptoRequest *xr=[[XCryptoRequest alloc] init];
 
     NSNumber *op=[param objectForKey:XCryptOperation];
     NSString *key=[param objectForKey:XCryptKey];

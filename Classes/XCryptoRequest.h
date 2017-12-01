@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "XCryptRequestDelegate.h"
+#import "XCryptoRequestDelegate.h"
 
 #import <CommonCrypto/CommonCryptor.h>
 
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger,XCryptErrorType){
 //file size
 typedef unsigned long long fileSize_t;
 
-@interface XCryptRequest : NSOperation
+@interface XCryptoRequest : NSOperation
 
 #pragma mark - method
 
@@ -74,7 +74,7 @@ typedef unsigned long long fileSize_t;
 
 @property(nonatomic,readonly,assign)fileSize_t xcryptSize;//xcryp progress size
 
-@property(nonatomic,assign)id<XCryptRequestDelegate> delegate;//XCryptRequest delegate
+@property(nonatomic,assign)id<XCryptoRequestDelegate> delegate;//XCryptRequest delegate
 
 #pragma mark -
 //@property(
