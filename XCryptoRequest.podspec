@@ -68,10 +68,10 @@ XCryptoRequest is a multi-thread AES-CBC En-Decrypt framework. And also can exte
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "6.0"
+  #s.ios.deployment_target = "6.0"
   # s.ios.deployment_target = "5.0"
 
-  s.osx.deployment_target = "10.8"
+  #s.osx.deployment_target = "10.8"
   # s.osx.deployment_target = "10.7"
 
   # s.watchos.deployment_target = "2.0"
@@ -104,9 +104,9 @@ XCryptoRequest is a multi-thread AES-CBC En-Decrypt framework. And also can exte
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.ios.frameworks = 'UIKit'
-  s.osx.frameworks = 'APPKit'
-  s.frameworks = 'Foundation'
+  #s.ios.frameworks = 'UIKit'
+  #s.osx.frameworks = 'APPKit'
+  #s.frameworks = 'Foundation'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
