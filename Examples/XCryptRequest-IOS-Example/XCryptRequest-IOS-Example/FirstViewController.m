@@ -10,7 +10,7 @@
 
 #import "TableViewCell.h"
 
-@interface FirstViewController ()<XCryptManagerProtocol,UITableViewDataSource,UITableViewDelegate>
+@interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>//XCryptManagerProtocol,
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
@@ -106,16 +106,16 @@
                            @"Key":@"qazwsxedcrfvtgbyhnujmiklopqazwsx"
                            };
     
-    [[XCryptManager sharedManager] sendAESCBCXCryptRequest:self requestParam:param callbackParam:@"/Users/wjg/Downloads/finished_upload_20171103.zip"];
-    
-    [[XCryptManager sharedManager] sendAESCBCXCryptRequest:self requestParam:paramb callbackParam:@"/Users/wjg/Documents/enzp.zip"];
+//    [[XCryptManager sharedManager] sendAESCBCXCryptRequest:self requestParam:param callbackParam:@"/Users/wjg/Downloads/finished_upload_20171103.zip"];
+//    
+//    [[XCryptManager sharedManager] sendAESCBCXCryptRequest:self requestParam:paramb callbackParam:@"/Users/wjg/Documents/enzp.zip"];
 }
 
 - (IBAction)stopAction:(UIButton *)sender {
     
-    [[XCryptManager sharedManager] cancelXCryptRequest:self requestTag:@"/Users/wjg/Downloads/finished_upload_20171103.zip"];
-    //
-    [[XCryptManager sharedManager] cancelXCryptRequest:self requestTag:@"/Users/wjg/Documents/enzp.zip"];
+//    [[XCryptManager sharedManager] cancelXCryptRequest:self requestTag:@"/Users/wjg/Downloads/finished_upload_20171103.zip"];
+//    //
+//    [[XCryptManager sharedManager] cancelXCryptRequest:self requestTag:@"/Users/wjg/Documents/enzp.zip"];
 }
 
 #pragma mark - XCryptManager Protocol
