@@ -17,9 +17,6 @@
 		2FCB14941FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14931FBD89AE00916496 /* XCryptRequest_IOS_ExampleTests.m */; };
 		2FCB149F1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB149E1FBD89AE00916496 /* XCryptRequest_IOS_ExampleUITests.m */; };
 		2FCB14AE1FBD8BC200916496 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14AD1FBD8BC200916496 /* TableViewCell.m */; };
-		2FCB14BB1FBD8CB300916496 /* NSString+CateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14B21FBD8CB300916496 /* NSString+CateString.m */; };
-		2FCB14BC1FBD8CB300916496 /* XCryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14B61FBD8CB300916496 /* XCryptManager.m */; };
-		2FCB14BD1FBD8CB300916496 /* XCryptRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB14B91FBD8CB300916496 /* XCryptRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,16 +57,6 @@
 		2FCB14A01FBD89AE00916496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCB14AC1FBD8BC200916496 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		2FCB14AD1FBD8BC200916496 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		2FCB14B01FBD8CB300916496 /* CategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesHeader.h; sourceTree = "<group>"; };
-		2FCB14B11FBD8CB300916496 /* NSString+CateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CateString.h"; sourceTree = "<group>"; };
-		2FCB14B21FBD8CB300916496 /* NSString+CateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CateString.m"; sourceTree = "<group>"; };
-		2FCB14B41FBD8CB300916496 /* XCrypteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCrypteHeader.h; sourceTree = "<group>"; };
-		2FCB14B51FBD8CB300916496 /* XCryptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptManager.h; sourceTree = "<group>"; };
-		2FCB14B61FBD8CB300916496 /* XCryptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCryptManager.m; sourceTree = "<group>"; };
-		2FCB14B71FBD8CB300916496 /* XCryptManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptManagerProtocol.h; sourceTree = "<group>"; };
-		2FCB14B81FBD8CB300916496 /* XCryptRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptRequest.h; sourceTree = "<group>"; };
-		2FCB14B91FBD8CB300916496 /* XCryptRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCryptRequest.m; sourceTree = "<group>"; };
-		2FCB14BA1FBD8CB300916496 /* XCryptRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCryptRequestDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +107,6 @@
 		2FCB14751FBD89AD00916496 /* XCryptRequest-IOS-Example */ = {
 			isa = PBXGroup;
 			children = (
-				2FCB14AF1FBD8CB300916496 /* Categories */,
-				2FCB14B31FBD8CB300916496 /* XCryptRequest */,
 				2FCB14791FBD89AD00916496 /* AppDelegate.h */,
 				2FCB147A1FBD89AD00916496 /* AppDelegate.m */,
 				2FCB147C1FBD89AD00916496 /* FirstViewController.h */,
@@ -163,30 +148,6 @@
 				2FCB14A01FBD89AE00916496 /* Info.plist */,
 			);
 			path = "XCryptRequest-IOS-ExampleUITests";
-			sourceTree = "<group>";
-		};
-		2FCB14AF1FBD8CB300916496 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				2FCB14B01FBD8CB300916496 /* CategoriesHeader.h */,
-				2FCB14B11FBD8CB300916496 /* NSString+CateString.h */,
-				2FCB14B21FBD8CB300916496 /* NSString+CateString.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		2FCB14B31FBD8CB300916496 /* XCryptRequest */ = {
-			isa = PBXGroup;
-			children = (
-				2FCB14B41FBD8CB300916496 /* XCrypteHeader.h */,
-				2FCB14B51FBD8CB300916496 /* XCryptManager.h */,
-				2FCB14B61FBD8CB300916496 /* XCryptManager.m */,
-				2FCB14B71FBD8CB300916496 /* XCryptManagerProtocol.h */,
-				2FCB14B81FBD8CB300916496 /* XCryptRequest.h */,
-				2FCB14B91FBD8CB300916496 /* XCryptRequest.m */,
-				2FCB14BA1FBD8CB300916496 /* XCryptRequestDelegate.h */,
-			);
-			path = XCryptRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,13 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCB14811FBD89AD00916496 /* SecondViewController.m in Sources */,
-				2FCB14BC1FBD8CB300916496 /* XCryptManager.m in Sources */,
 				2FCB147B1FBD89AD00916496 /* AppDelegate.m in Sources */,
 				2FCB147E1FBD89AD00916496 /* FirstViewController.m in Sources */,
 				2FCB14AE1FBD8BC200916496 /* TableViewCell.m in Sources */,
-				2FCB14BD1FBD8CB300916496 /* XCryptRequest.m in Sources */,
 				2FCB14781FBD89AD00916496 /* main.m in Sources */,
-				2FCB14BB1FBD8CB300916496 /* NSString+CateString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +526,7 @@
 				2FCB14A51FBD89AE00916496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FCB14A61FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +535,7 @@
 				2FCB14A81FBD89AE00916496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FCB14A91FBD89AE00916496 /* Build configuration list for PBXNativeTarget "XCryptRequest-IOS-ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +544,7 @@
 				2FCB14AB1FBD89AE00916496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
